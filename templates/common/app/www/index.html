@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title><%= angularAppName %></title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+</head>
+
+<body ng-app="<%= angularAppName %>">
+    <% if (ionicModule) {
+     %><ion-header-bar class="bar-positive">
+      <h1 class="title"><%= angularAppName %></h1>
+    </ion-header-bar>
+    <ion-nav-view/><%
+      } %>
+</body>
+
+</html>

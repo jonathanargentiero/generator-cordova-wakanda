@@ -60,7 +60,7 @@ module.exports = function (grunt) {
   }
   catch(e){
     bowerrc = {
-      directory : "bower_components"
+      directory : "www/bower_components"
     };
   }
   
@@ -86,15 +86,19 @@ module.exports = function (grunt) {
           cwd: '<%%= wakandaProject.angularAppFolder %>/<%%= wakandaProject.angularApp.app %>',
           dest: '<%%= wakandaProject.webFolder %>',
           src: [
-            '*.{ico,png,txt}',
-            '.htaccess',
-            'robots.txt',
-            '*.html',
-            'views/**/*.html',
-            'scripts/**/*.js',
-            'styles/**/*.css',
-            'images/**.{png,jpg,jpeg,gif,webp,svg}',
-            'fonts/*'
+            'config.xml',
+            'platforms/.gitkeep',
+            'plugins/.gitkeep',
+            'hooks/README.md',
+            'www/*.{ico,png,txt}',
+            'www/.htaccess',
+            'www/robots.txt',
+            'www/*.html',
+            'www/views/**/*.html',
+            'www/scripts/**/*.js',
+            'www/styles/**/*.css',
+            'www/images/**.{png,jpg,jpeg,gif,webp,svg}',
+            'www/fonts/*'
           ]
         }]
       },
@@ -117,15 +121,19 @@ module.exports = function (grunt) {
           dest: '<%%= wakandaProject.webFolder %>',
           src: [
             'bower_components/**/*',
-            '*.{ico,png,txt}',
-            '.htaccess',
-            'robots.txt',
-            '*.html',
-            'views/**/*.html',
-            'scripts/**/*.js',
-            'styles/**/*.css',
-            'images/**.{png,jpg,jpeg,gif,webp,svg}',
-            'fonts/*'
+            'config.xml',
+            'platforms/.gitkeep',
+            'plugins/.gitkeep',
+            'hooks/README.md',
+            'www/*.{ico,png,txt}',
+            'www/.htaccess',
+            'www/robots.txt',
+            'www/*.html',
+            'www/views/**/*.html',
+            'www/scripts/**/*.js',
+            'www/styles/**/*.css',
+            'www/images/**.{png,jpg,jpeg,gif,webp,svg}',
+            'www/fonts/*'
           ]
         }]
       }

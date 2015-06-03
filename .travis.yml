@@ -3,5 +3,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-angular-wakanda' ]; then cd .. && eval "mv $currentfolder generator-angular-wakanda" && cd generator-angular-wakanda; fi
+  - if [ "$currentfolder" != 'generator-cordova-wakanda' ]; then cd .. && eval "mv $currentfolder generator-cordova-wakanda" && cd generator-cordova-wakanda; fi
 

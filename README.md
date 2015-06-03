@@ -1,4 +1,4 @@
-generator-angular-wakanda
+generator-cordova-wakanda
 =========================
 [![ angular-wakanda ](http://www.wakanda.org/sites/default/files/medias/128.png)](http://www.wakanda.org/angular-wakanda/)
 
@@ -27,10 +27,10 @@ If you get into some troubles for the installation - see [notes](#notes) part.
 
 ##Usage
 
-Install `generator-angular-wakanda` :
+Install `generator-cordova-wakanda` :
 
 ```
-npm install -g generator-angular-wakanda
+npm install -g generator-cordova-wakanda
 ```
 
 Go to your Wakanda project directory
@@ -39,10 +39,10 @@ Go to your Wakanda project directory
 cd MyWakandaSolution/MyWakandaProject
 ```
 
-Run `yo angular-wakanda`, optionally passing an app name (the app name of your angular app) :
+Run `yo cordova-wakanda`, optionally passing an app name (the app name of your cordova app) :
 
 ```
-yo angular-wakanda [app-name]
+yo cordova-wakanda [app-name]
 ```
 
 You will be asked a couple of questions like :
@@ -56,7 +56,7 @@ Example of output directory tree :
 
 ```
 WakandaProjectFolder
-├─┬ angularApp
+├─┬ cordovaApp
   ├─┬ app
     ├── scripts
     ├── styles
@@ -79,7 +79,7 @@ In result, you will have two levels of Gruntfile.js :
 
 ##Angular subgenerators available
 
-In your `angularApp` folder, you can run any of the [official yeoman generator-angular subgenerators](https://github.com/yeoman/generator-angular/blob/master/readme.md#generators).
+In your `cordovaApp` folder, you can run any of the [official yeoman generator-angular subgenerators](https://github.com/yeoman/generator-angular/blob/master/readme.md#generators).
 
 ## Resources
 
@@ -91,7 +91,7 @@ In your `angularApp` folder, you can run any of the [official yeoman generator-a
 * If you don't have yo : `npm install -g yo`
 * Clone the repo
 * `npm install`
-* If you already work with the genrator-angular-wakanda, you'll need to uninstall it : `npm uninstall generator-angular-wakanda -g`
+* If you already work with the genrator-angular-wakanda, you'll need to uninstall it : `npm uninstall generator-cordova-wakanda -g`
 * In the repo directory : `npm link` (will let you use your local version of the generator)
 
 ##Notes
@@ -103,7 +103,7 @@ In your `angularApp` folder, you can run any of the [official yeoman generator-a
 
 The MIT License (MIT)
 
-Copyright (C) 2014 4D SAS
+Copyright (C) 2015 Wakanda SAS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
