@@ -474,7 +474,8 @@ Generator.prototype.bootstrapFiles = function bootstrapFiles() {
     path.join(this.appPath, 'images/yeoman.png')
   );
   
-  console.log(this.dummydata,this.destinationRoot())
+  console.log("Populating Wakanda Data model...");
+  
   if(this.dummydata){
     // copy model
      this.copy(
